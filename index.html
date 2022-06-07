@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Golden finance</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Golden-Finance</h1>
+    </div>
+    <div class="text">
+        <h2 id="text">What kind of service you are looking for?</h2>
+    </div>
+    <div class="buttons">
+        <button class="btnOne">Deposit money</button>
+        <button class="btnTwo">Credit money</button>
+    </div>
+ <div class="container">
+    <div class="containerMortgage">
+        <div class="calculator">
+            <h4>
+                Cost of realestate
+            </h4>
+            <span>$ <input type="text" class="realestate" placeholder="Cost in U.S. dollars..."></span>
+                <h4>
+                    Down payment
+                </h4>
+                <span>$ <input type="text" class="downpayment" placeholder="Amount in U.S. dollars..."></span>
+                <h4>
+                Loan terms
+            </h4>
+            <span> 🗓️ <input type="text" class="loanterms" placeholder="Loan terms in months..."></span>
+            <h4>
+                Interest
+            </h4>
+            <span>% <input type="text" class="interest" placeholder="APY..."></span>
+            
+            <button class="btn">Calculate</button>
+        </div>
+        <div class="calculated">
+            <div class="total">
+                <p>Monthly payment</p>
+                <span>$</span>
+                <span class="monthlypayment" id="total"></span>
+            </div>
+            <div class="total">
+                <p>Total payment</p>
+                <span>$</span>
+                <span class="totalpayment" id="total"></span>
+            </div>
+            <div class="total">
+                <p>Total interest</p>
+                <span>$</span>
+                <span class="totalinterest" id="total"></span>
+        </div>
+    </div>
+</div>
+    <div class="containerLoan">
+        <div class="calculator">
+            <h4>
+                Cost of credit
+            </h4>
+            <span>$ <input type="text" class="credit" placeholder="Cost in U.S. dollars..."></span>
+                <h4>
+                Loan terms
+            </h4>
+            <span> 🗓️ <input type="text" class="loantermsCredit" placeholder="Loan terms in months..."></span>
+            <h4>
+                Interest
+            </h4>
+            <span>% <input type="text" class="interestCredit" placeholder="APY..."></span>
+            
+            <button class="btnCredit">Calculate</button>
+        </div>
+        <div class="calculated">
+            <div class="totalCredit">
+                <p>Monthly payment</p>
+                <span>$</span>
+                <span class="monthlypaymentCredit" id="total"></span>
+            </div>
+            <div class="total">
+                <p>Total payment</p>
+                <span>$</span>
+                <span class="totalpaymentCredit" id="total"></span>
+            </div>
+            <div class="total">
+                <p>Total interest</p>
+                <span>$</span>
+                <span class="totalinterestCredit" id="total"></span>
+        </div>
+    </div>
+</div>
+    <div class="containerDeposit">
+        <div class="calculator">
+            <h4>
+                Amount of deposit
+            </h4>
+            <span>$ <input type="text" class="deposit" placeholder="Deposit in U.S. dollars..."></span>
+                <h4>
+                Deposit terms
+            </h4>
+            <span> 🗓️ <input type="text" class="depositterms" placeholder="Deposit terms in months..."></span>
+            <h4>
+                Interest
+            </h4>
+            <span>% <input type="text" class="interestDeposit" placeholder="%..."></span>
+            
+            <button class="btnDeposit">Calculate</button>
+        </div>
+        <div class="calculated">
+            <div class="total">
+                <p>Yearly profit</p>
+                <span>$</span>
+                <span class="yearlyprofit" id="total"></span>
+            </div>
+    </div>
+    </div>
+</div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

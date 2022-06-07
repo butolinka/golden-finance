@@ -1,0 +1,63 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1541140911322-98afe66ea6da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.header, .text, .buttons{
+    display: flex;
+    justify-content: center;
+}
+h1, h2{
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    color: #3A3845;
+}
+.btnOne, .btnTwo{
+    background-color: #826F66;
+    padding: 15px;
+    font-family: 'Cardo', serif;
+    color: #F7CCAC;
+    font-size: 20px;
+}
+.btn, .btnDeposit, .btnCredit{
+    font-size: 15px;
+    background-color: #826F66;
+    padding: 5px;
+    font-family: 'Cardo', serif;
+    color: #F7CCAC;
+    border-radius: 15px;
+    margin: 5px;
+}
+h4, p, span, input{
+    font-family: 'Cardo', serif;
+    font-size: 13px;
+}
+.containerMortgage, .containerLoan, .containerDeposit{
+    border: #3A3845 solid 3px;
+    border-radius: 25px;
+    background-color: #F7CCAC;
+    opacity: 80%;
+    padding: 25px;
+    width: 400px;
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#total{
+    font-family: 'Cardo', serif;
+    font-weight: bold;
+    color: #3A3845;
+    font-size: 25px;
+}
+
+@media all and (max-width:800px){
+    body{
+        background-position: center;
+        height: 100vh;
+    }
+}
